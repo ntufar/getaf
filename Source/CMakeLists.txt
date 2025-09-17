@@ -1,0 +1,3 @@
+add_subdirectory(Framework)
+add_subdirectory(GameLogic)
+add_subdirectory(Tests)
