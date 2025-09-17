@@ -1,3 +1,0 @@
-C:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild/CMakeFiles/mysql_connector_cpp-populate.dir
-C:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild/CMakeFiles/ZERO_CHECK.dir

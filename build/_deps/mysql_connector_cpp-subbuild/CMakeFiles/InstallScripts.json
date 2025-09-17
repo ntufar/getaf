@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

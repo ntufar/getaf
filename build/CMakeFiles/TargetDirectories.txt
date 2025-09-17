@@ -1,2 +1,0 @@
-C:/projects/getaf/build/platform-cache/CMakeFiles/ALL_BUILD.dir
-C:/projects/getaf/build/platform-cache/CMakeFiles/ZERO_CHECK.dir

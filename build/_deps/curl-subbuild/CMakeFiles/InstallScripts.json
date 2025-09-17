@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/projects/getaf/build/_deps/curl-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
