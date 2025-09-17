@@ -1,0 +1,34 @@
+name: Build Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup MSVC environment
+      uses: ilammy/msvc-dev-cmd@v1
+
+    - name: Configure CMake
+      run: cmake -B build -S .
+
+    - name: Build C++ Framework
+      run: cmake --build build --config Release
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Build C# Integration Project
+      run: dotnet build Source/Tests/Integration/Integration.csproj --configuration Release

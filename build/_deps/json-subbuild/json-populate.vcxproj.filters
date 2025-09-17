@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\1b654afff99d514d874b0ebec4b7f78e\json-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\419565c59cedee86cbe916bd263c41a6\json-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\34f402a27d7c2c961fc252f735384f9b\json-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\projects\getaf\build\_deps\json-subbuild\CMakeFiles\json-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{85AE4662-F0FF-3EB2-8DA3-0C0DEB0DE7F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

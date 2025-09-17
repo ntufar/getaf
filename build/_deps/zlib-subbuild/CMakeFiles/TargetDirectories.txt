@@ -1,0 +1,3 @@
+C:/projects/getaf/build/_deps/zlib-subbuild/CMakeFiles/zlib-populate.dir
+C:/projects/getaf/build/_deps/zlib-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/projects/getaf/build/_deps/zlib-subbuild/CMakeFiles/ZERO_CHECK.dir
