@@ -1,0 +1,1411 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 9/17/2025 9:48:59 PM.
+      
+      Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:03.56
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/projects/getaf/build/platform-cache/CMakeFiles/4.1.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link.com"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link.com"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link.exe"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/mt.com"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/mt.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
+      - "C:/Users/NicolaiTufar/.local/bin/mt.com"
+      - "C:/Users/NicolaiTufar/.local/bin/mt.exe"
+      - "C:/Users/NicolaiTufar/.local/bin/mt"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/mt"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/projects/FlutterSDK/flutter/bin/mt.com"
+      - "C:/projects/FlutterSDK/flutter/bin/mt.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/mt"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/mt"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/mt"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/mt.com"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/mt.exe"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/mt"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 9/17/2025 9:49:04 PM.
+      
+      Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:03.42
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/projects/getaf/build/platform-cache/CMakeFiles/4.1.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/.local/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link.com"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/lld-link"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link.com"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link.exe"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/lld-link"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:35 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/Bootstrap/bin/"
+      - "C:/Program Files (x86)/Bootstrap/sbin/"
+      - "C:/Program Files (x86)/Bootstrap/"
+    searched_directories:
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/rc.com"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/rc.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
+      - "C:/Users/NicolaiTufar/.local/bin/rc.com"
+      - "C:/Users/NicolaiTufar/.local/bin/rc.exe"
+      - "C:/Users/NicolaiTufar/.local/bin/rc"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/rc"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/projects/FlutterSDK/flutter/bin/rc.com"
+      - "C:/projects/FlutterSDK/flutter/bin/rc.exe"
+      - "C:/projects/FlutterSDK/flutter/bin/rc"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/rc"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/rc"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/rc.com"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/rc.exe"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/rc"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/Bootstrap/bin/rc.com"
+      - "C:/Program Files (x86)/Bootstrap/bin/rc.exe"
+      - "C:/Program Files (x86)/Bootstrap/bin/rc"
+      - "C:/Program Files (x86)/Bootstrap/sbin/rc.com"
+      - "C:/Program Files (x86)/Bootstrap/sbin/rc.exe"
+      - "C:/Program Files (x86)/Bootstrap/sbin/rc"
+      - "C:/Program Files (x86)/Bootstrap/rc.com"
+      - "C:/Program Files (x86)/Bootstrap/rc.exe"
+      - "C:/Program Files (x86)/Bootstrap/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Bootstrap"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Bootstrap"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-zdxxwz"
+      binary: "C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-zdxxwz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-zdxxwz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7a25f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 9/17/2025 9:49:08 PM.
+        
+        Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-zdxxwz\\cmTC_7a25f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7a25f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-zdxxwz\\Debug\\".
+          Creating directory "cmTC_7a25f.dir\\Debug\\cmTC_7a25f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7a25f.dir\\Debug\\cmTC_7a25f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7a25f.dir\\Debug\\cmTC_7a25f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_7a25f.dir\\Debug\\\\" /Fd"cmTC_7a25f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_7a25f.dir\\Debug\\\\" /Fd"cmTC_7a25f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-zdxxwz\\Debug\\cmTC_7a25f.exe" /INCREMENTAL /ILK:"cmTC_7a25f.dir\\Debug\\cmTC_7a25f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-zdxxwz/Debug/cmTC_7a25f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-zdxxwz/Debug/cmTC_7a25f.lib" /MACHINE:X64  /machine:x64 cmTC_7a25f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_7a25f.vcxproj -> C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-zdxxwz\\Debug\\cmTC_7a25f.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_7a25f.dir\\Debug\\cmTC_7a25f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_7a25f.dir\\Debug\\cmTC_7a25f.tlog\\cmTC_7a25f.lastbuildstate".
+        Done Building Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-zdxxwz\\cmTC_7a25f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:03.23
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-5tmazo"
+      binary: "C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-5tmazo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-5tmazo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_def29.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 9/17/2025 9:49:13 PM.
+        
+        Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-5tmazo\\cmTC_def29.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_def29.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-5tmazo\\Debug\\".
+          Creating directory "cmTC_def29.dir\\Debug\\cmTC_def29.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_def29.dir\\Debug\\cmTC_def29.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_def29.dir\\Debug\\cmTC_def29.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_def29.dir\\Debug\\\\" /Fd"cmTC_def29.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_def29.dir\\Debug\\\\" /Fd"cmTC_def29.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-5tmazo\\Debug\\cmTC_def29.exe" /INCREMENTAL /ILK:"cmTC_def29.dir\\Debug\\cmTC_def29.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-5tmazo/Debug/cmTC_def29.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/projects/getaf/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-5tmazo/Debug/cmTC_def29.lib" /MACHINE:X64  /machine:x64 cmTC_def29.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_def29.vcxproj -> C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-5tmazo\\Debug\\cmTC_def29.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_def29.dir\\Debug\\cmTC_def29.tlog\\unsuccessfulbuild".
+          Touching "cmTC_def29.dir\\Debug\\cmTC_def29.tlog\\cmTC_def29.lastbuildstate".
+        Done Building Project "C:\\projects\\getaf\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-5tmazo\\cmTC_def29.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:03.63
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/mysql_connector_cpp-src/cdk/cmake/DepFindSSL.cmake:169 (find_path)"
+      - "build/_deps/mysql_connector_cpp-src/cdk/cmake/DepFindSSL.cmake:74 (find_openssl)"
+      - "build/_deps/mysql_connector_cpp-src/cdk/cmake/DepFindSSL.cmake:391 (main)"
+      - "build/_deps/mysql_connector_cpp-src/cdk/cmake/dependency.cmake:45 (include)"
+      - "build/_deps/mysql_connector_cpp-src/cdk/CMakeLists.txt:96 (find_dependency)"
+    mode: "path"
+    variable: "OPENSSL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openssl/ssl.h"
+    candidate_directories:
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/include/"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Windows/System32/include/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/include/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/include/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/include/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/include/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/include/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/include/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/include/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/include/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/include/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/NicolaiTufar/.local/bin/include/"
+      - "C:/Users/NicolaiTufar/.local/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/include/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/include/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/include/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/projects/FlutterSDK/flutter/bin/include/"
+      - "C:/projects/FlutterSDK/flutter/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/include/"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/include/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/include/"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/include/"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Program Files/include/include/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/include/include/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/include/include/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/GETAF/include/include/"
+      - "C:/Program Files (x86)/GETAF/include/"
+      - "C:/Program Files (x86)/GETAF/include/"
+      - "C:/Program Files (x86)/GETAF/"
+    searched_directories:
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/include/openssl/ssl.h"
+      - "C:/projects/FlutterSDK/flutter/bin/cache/dart-sdk/bin/openssl/ssl.h"
+      - "C:/Windows/System32/include/openssl/ssl.h"
+      - "C:/Windows/System32/openssl/ssl.h"
+      - "C:/Windows/include/openssl/ssl.h"
+      - "C:/Windows/openssl/ssl.h"
+      - "C:/Windows/System32/wbem/include/openssl/ssl.h"
+      - "C:/Windows/System32/wbem/openssl/ssl.h"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/include/openssl/ssl.h"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/openssl/ssl.h"
+      - "C:/Windows/System32/OpenSSH/include/openssl/ssl.h"
+      - "C:/Windows/System32/OpenSSH/openssl/ssl.h"
+      - "C:/Program Files/Git/cmd/include/openssl/ssl.h"
+      - "C:/Program Files/Git/cmd/openssl/ssl.h"
+      - "C:/Program Files/dotnet/include/openssl/ssl.h"
+      - "C:/Program Files/dotnet/openssl/ssl.h"
+      - "C:/Program Files/nodejs/include/openssl/ssl.h"
+      - "C:/Program Files/nodejs/openssl/ssl.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/openssl/ssl.h"
+      - "C:/Program Files/CMake/bin/include/openssl/ssl.h"
+      - "C:/Program Files/CMake/bin/openssl/ssl.h"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/include/openssl/ssl.h"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/.local/bin/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/.local/bin/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/codeBin/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Microsoft/WindowsApps/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/Microsoft VS Code/bin/openssl/ssl.h"
+      - "C:/projects/FlutterSDK/flutter/bin/include/openssl/ssl.h"
+      - "C:/projects/FlutterSDK/flutter/bin/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Local/Programs/cursor/resources/app/bin/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/npm/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/.dotnet/tools/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/include/openssl/ssl.h"
+      - "C:/Users/NicolaiTufar/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/openssl/ssl.h"
+      - "C:/Program Files/include/include/openssl/ssl.h"
+      - "C:/Program Files/include/openssl/ssl.h"
+      - "C:/Program Files/include/openssl/ssl.h"
+      - "C:/Program Files/openssl/ssl.h"
+      - "C:/Program Files (x86)/include/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/openssl/ssl.h"
+      - "C:/Program Files/CMake/include/include/openssl/ssl.h"
+      - "C:/Program Files/CMake/include/openssl/ssl.h"
+      - "C:/Program Files/CMake/include/openssl/ssl.h"
+      - "C:/Program Files/CMake/openssl/ssl.h"
+      - "C:/Program Files (x86)/GETAF/include/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/GETAF/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/GETAF/include/openssl/ssl.h"
+      - "C:/Program Files (x86)/GETAF/openssl/ssl.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\projects\\FlutterSDK\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\NicolaiTufar\\.local\\bin"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\codeBin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\projects\\FlutterSDK\\flutter\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\NicolaiTufar\\AppData\\Roaming\\npm"
+        - "C:\\Users\\NicolaiTufar\\.dotnet\\tools"
+        - "c:\\Users\\NicolaiTufar\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/GETAF"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/GETAF"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:237 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:364 (__check_type_size_impl)"
+      - "build/_deps/mysql_connector_cpp-src/cdk/foundation/CMakeLists.txt:39 (check_type_size)"
+    checks:
+      - "Check size of wchar_t"
+    directories:
+      source: "C:/projects/getaf/build/CMakeFiles/CMakeScratch/TryCompile-apt474"
+      binary: "C:/projects/getaf/build/CMakeFiles/CMakeScratch/TryCompile-apt474"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/projects/getaf/build/_deps/mysql_connector_cpp-src/cdk/cmake;C:/projects/getaf/build/_deps/mysql_connector_cpp-src/cmake;C:/projects/getaf/build/_deps/mysql_connector_cpp-src/cmake/../cdk/cmake;C:/projects/getaf/build/_deps/mysql_connector_cpp-src/cdk/cmake"
+    buildResult:
+      variable: "HAVE_WCHAR_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/projects/getaf/build/CMakeFiles/CMakeScratch/TryCompile-apt474'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_10c64.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 9/17/2025 9:49:19 PM.
+        
+        Project "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\cmTC_10c64.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_10c64.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\Debug\\".
+          Creating directory "cmTC_10c64.dir\\Debug\\cmTC_10c64.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_10c64.dir\\Debug\\cmTC_10c64.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_10c64.dir\\Debug\\cmTC_10c64.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_10c64.dir\\Debug\\\\" /Fd"cmTC_10c64.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -std=c++17 "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\WCHAR_SIZE.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_10c64.dir\\Debug\\\\" /Fd"cmTC_10c64.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -std=c++17 "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\WCHAR_SIZE.c"
+        cl : command line  warning D9002: ignoring unknown option '-std=c++17' [C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\cmTC_10c64.vcxproj]
+          WCHAR_SIZE.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\Debug\\cmTC_10c64.exe" /INCREMENTAL /ILK:"cmTC_10c64.dir\\Debug\\cmTC_10c64.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/projects/getaf/build/CMakeFiles/CMakeScratch/TryCompile-apt474/Debug/cmTC_10c64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/projects/getaf/build/CMakeFiles/CMakeScratch/TryCompile-apt474/Debug/cmTC_10c64.lib" /MACHINE:X64  /machine:x64 cmTC_10c64.dir\\Debug\\WCHAR_SIZE.obj
+          cmTC_10c64.vcxproj -> C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\Debug\\cmTC_10c64.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_10c64.dir\\Debug\\cmTC_10c64.tlog\\unsuccessfulbuild".
+          Touching "cmTC_10c64.dir\\Debug\\cmTC_10c64.tlog\\cmTC_10c64.lastbuildstate".
+        Done Building Project "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\cmTC_10c64.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\cmTC_10c64.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          cl : command line  warning D9002: ignoring unknown option '-std=c++17' [C:\\projects\\getaf\\build\\CMakeFiles\\CMakeScratch\\TryCompile-apt474\\cmTC_10c64.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:03.52
+        
+      exitCode: 0
+...

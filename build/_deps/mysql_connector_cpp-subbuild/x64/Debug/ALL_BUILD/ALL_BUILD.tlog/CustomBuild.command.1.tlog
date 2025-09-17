@@ -1,0 +1,10 @@
+^C:\PROJECTS\GETAF\BUILD\_DEPS\MYSQL_CONNECTOR_CPP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild -BC:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild --check-stamp-file C:/projects/getaf/build/_deps/mysql_connector_cpp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

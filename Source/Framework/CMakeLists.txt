@@ -19,6 +19,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(cpr)
 
+# Add mysql-connector-c++ dependency
+FetchContent_Declare(
+  mysql_connector_cpp
+  GIT_REPOSITORY https://github.com/mysql/mysql-connector-cpp.git
+  GIT_TAG 8.0.33
+)
+FetchContent_MakeAvailable(mysql_connector_cpp)
+
 
 # Create a library for the framework
 add_library(Framework
@@ -28,14 +36,17 @@ add_library(Framework
     HTTPClient.h
     DBConnector.cpp
     DBConnector.h
+    TestReporter.cpp
+    TestReporter.h
 )
 
 # Public headers
 target_include_directories(Framework PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(Framework PUBLIC ${json_SOURCE_DIR}/include)
+target_include_directories(Framework PUBLIC ${mysql_connector_cpp_SOURCE_DIR}/include)
 
 # Link dependencies
-target_link_libraries(Framework PRIVATE cpr::cpr)
+target_link_libraries(Framework PRIVATE cpr::cpr mysql_connector_cpp::mysql_connector_cpp)
 
 
 # Include GoogleTest

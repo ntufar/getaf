@@ -1,18 +1,30 @@
-#ifndef CONFIG_READER_H
-#define CONFIG_READER_H
+#pragma once
 
 #include <string>
-#include "nlohmann/json.hpp"
+#include "json.hpp"
 
-class ConfigReader {
+// For the C++/C# bridge placeholder
+#ifdef _WIN32
+    #ifdef FRAMEWORK_EXPORTS
+        #define FRAMEWORK_API __declspec(dllexport)
+    #else
+        #define FRAMEWORK_API __declspec(dllimport)
+    #endif
+#else
+    #define FRAMEWORK_API
+#endif
+
+extern "C" FRAMEWORK_API int GetAnswer();
+extern "C" FRAMEWORK_API bool TriggerGauntletTest(const char* testName);
+
+class ConfigReader
+{
 public:
-    ConfigReader(const std::string& filepath);
-    bool isValid() const;
-    std::string getString(const std::string& key) const;
+    ConfigReader();
+    bool LoadXml(const std::string& filePath);
+    std::string GetValue(const std::string& key, const std::string& defaultValue = "") const;
+    bool HasKey(const std::string& key) const;
 
 private:
-    nlohmann::json data;
-    bool valid;
+    nlohmann::json configData;
 };
-
-#endif // CONFIG_READER_H

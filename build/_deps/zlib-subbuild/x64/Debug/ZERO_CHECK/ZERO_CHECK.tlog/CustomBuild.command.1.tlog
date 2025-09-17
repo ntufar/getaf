@@ -1,0 +1,10 @@
+^C:\PROJECTS\GETAF\BUILD\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\7F1F530B23635E3E2F3C7BFAFE8995C8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/projects/getaf/build/_deps/zlib-subbuild -BC:/projects/getaf/build/_deps/zlib-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/projects/getaf/build/_deps/zlib-subbuild/zlib-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

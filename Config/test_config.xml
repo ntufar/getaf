@@ -1,0 +1,13 @@
+<config>
+    <setting name="LogLevel" value="INFO"/>
+    <database>
+        <host>localhost</host>
+        <port>3306</port>
+        <user>testuser</user>
+        <password>testpass</password>
+    </database>
+    <features>
+        <feature name="FeatureA" enabled="true"/>
+        <feature name="FeatureB" enabled="false"/>
+    </features>
+</config>
