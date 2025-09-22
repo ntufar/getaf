@@ -7,7 +7,7 @@ include(FetchContent)
 FetchContent_Declare(
   json
   GIT_REPOSITORY https://github.com/nlohmann/json.git
-  GIT_TAG v3.11.2
+  GIT_TAG v3.12.0
 )
 FetchContent_MakeAvailable(json)
 
@@ -23,7 +23,7 @@ FetchContent_MakeAvailable(cpr)
 FetchContent_Declare(
   mysql_connector_cpp
   GIT_REPOSITORY https://github.com/mysql/mysql-connector-cpp.git
-  GIT_TAG 8.0.33
+  GIT_TAG 9.4.0
 )
 FetchContent_MakeAvailable(mysql_connector_cpp)
 
