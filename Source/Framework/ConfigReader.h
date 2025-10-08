@@ -1,7 +1,8 @@
 #pragma once
 
 #include <string>
-#include "json.hpp"
+#include "json.hpp" // Include nlohmann/json header
+#include "tinyxml2.h" // Include TinyXML2 header
 
 // For the C++/C# bridge placeholder
 #ifdef _WIN32

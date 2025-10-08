@@ -2,6 +2,7 @@
 #include "ConfigReader.h"
 #include <string>
 #include <filesystem>
+#include <fstream>
 
 namespace fs = std::filesystem;
 
@@ -13,68 +14,188 @@ void createTestConfigFile(const std::string& filePath, const std::string& conten
     file.close();
 }
 
-TEST(ConfigReaderTest, LoadValidXmlFile)
-{
+class ConfigReaderTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        // Create test config files
+        createTestConfigFile("test_config.xml", 
+            R"(<?xml version="1.0" encoding="UTF-8"?>
+            <config>
+                <setting name="LogLevel" value="INFO"/>
+                <database>
+                    <host>localhost</host>
+                    <port>3306</port>
+                    <user>testuser</user>
+                    <password>testpass</password>
+                </database>
+                <features>
+                    <feature name="FeatureA" enabled="true"/>
+                    <feature name="FeatureB" enabled="false"/>
+                </features>
+            </config>)");
+        
+        createTestConfigFile("malformed_config.xml",
+            R"(<?xml version="1.0" encoding="UTF-8"?>
+            <config>
+                <setting>Incomplete tag
+                <database>
+                    Missing closing tags
+            </config>)");
+        
+        createTestConfigFile("empty_config.xml", "");
+
+        createTestConfigFile("advanced_config.xml",
+            R"(<?xml version="1.0" encoding="UTF-8"?>
+            <root>
+                <item>
+                    <name>Item A</name>
+                    <value>100</value>
+                </item>
+                <item>
+                    <name>Item B</name>
+                    <value>200</value>
+                </item>
+                <description>This is a <bold>description</bold> with mixed content.</description>
+                <simpleText>Just some text.</simpleText>
+                <numericValue>123</numericValue>
+                <booleanValue>true</booleanValue>
+            </root>)");
+    }
+
+    void TearDown() override {
+        // Clean up test files
+        std::remove("test_config.xml");
+        std::remove("malformed_config.xml");
+        std::remove("empty_config.xml");
+        std::remove("advanced_config.xml");
+    }
+};
+
+TEST_F(ConfigReaderTest, LoadValidXmlFile) {
     ConfigReader reader;
-    std::string testConfigPath = "C:/projects/getaf/Config/test_config.xml";
-    ASSERT_TRUE(reader.LoadXml(testConfigPath));
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
 }
 
-TEST(ConfigReaderTest, GetValueFromValidXml)
-{
+TEST_F(ConfigReaderTest, GetValueFromValidXml) {
     ConfigReader reader;
-    std::string testConfigPath = "C:/projects/getaf/Config/test_config.xml";
-    reader.LoadXml(testConfigPath);
-
-    // The current simple XML parser only extracts top-level tags as keys
-    // So, we expect to get values for 'setting', 'database', 'features' as raw XML strings
-    // This test will need to be updated once a proper XML parser is integrated
-    ASSERT_EQ(reader.GetValue("setting"), " name=\"LogLevel\" value=\"INFO\"/");
-    ASSERT_EQ(reader.GetValue("database"), "\n        <host>localhost</host>\n        <port>3306</port>\n        <user>testuser</user>\n        <password>testpass</password>\n    ");
-    ASSERT_EQ(reader.GetValue("features"), "\n        <feature name=\"FeatureA\" enabled=\"true"/>\n        <feature name=\"FeatureB\" enabled=\"false"/>\n    ");
-    ASSERT_TRUE(reader.GetValue("NonExistentKey").empty());
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    // Now with TinyXML2, we expect specific values
+    ASSERT_EQ(reader.GetValue("config.setting.@name"), "LogLevel");
+    ASSERT_EQ(reader.GetValue("config.setting.@value"), "INFO");
+    ASSERT_EQ(reader.GetValue("config.database.host"), "localhost");
+    ASSERT_EQ(reader.GetValue("config.database.port"), "3306");
+    ASSERT_EQ(reader.GetValue("config.features.feature.@name"), "FeatureA"); // Only gets the first feature
 }
 
-TEST(ConfigReaderTest, GetAnswerBridgeFunction)
-{
+TEST_F(ConfigReaderTest, GetValueNestedKeys) {
+    ConfigReader reader;
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    ASSERT_EQ(reader.GetValue("config.database.user"), "testuser");
+    ASSERT_EQ(reader.GetValue("config.database.password"), "testpass");
+}
+
+TEST_F(ConfigReaderTest, GetValueAttributes) {
+    ConfigReader reader;
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    ASSERT_EQ(reader.GetValue("config.features.feature.@enabled"), "true");
+}
+
+TEST_F(ConfigReaderTest, GetValueWithDefault) {
+    ConfigReader reader;
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    // Test default value for non-existent key
+    ASSERT_EQ(reader.GetValue("nonexistent.key", "default"), "default");
+    // Test default value when key exists
+    ASSERT_NE(reader.GetValue("config.setting.@value", "default"), "default");
+}
+
+TEST_F(ConfigReaderTest, GetAnswerBridgeFunction) {
     ASSERT_EQ(GetAnswer(), 42);
 }
 
-TEST(ConfigReaderTest, TriggerGauntletTestBridgeFunction)
-{
-    // This test primarily checks if the function can be called without crashing
-    // and returns true as per its current dummy implementation.
-    // In a real scenario, this would involve mocking the Gauntlet interaction.
+TEST_F(ConfigReaderTest, TriggerGauntletTestBridgeFunction) {
     ASSERT_TRUE(TriggerGauntletTest("TestMap_01"));
+    ASSERT_TRUE(TriggerGauntletTest("")); // Edge case: empty string
 }
 
-TEST(ConfigReaderTest, HasKey)
-{
+TEST_F(ConfigReaderTest, HasKeyTests) {
     ConfigReader reader;
-    std::string testConfigPath = "C:/projects/getaf/Config/test_config.xml";
-    reader.LoadXml(testConfigPath);
-
-    ASSERT_TRUE(reader.HasKey("setting"));
-    ASSERT_TRUE(reader.HasKey("database"));
-    ASSERT_TRUE(reader.HasKey("features"));
-    ASSERT_FALSE(reader.HasKey("NonExistentKey"));
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    
+    ASSERT_TRUE(reader.HasKey("config.setting"));
+    ASSERT_TRUE(reader.HasKey("config.database.host"));
+    ASSERT_TRUE(reader.HasKey("config.features.feature.@name"));
+    ASSERT_FALSE(reader.HasKey(""));  // Empty key
+    ASSERT_FALSE(reader.HasKey("nonexistent.key"));
 }
 
-TEST(ConfigReaderTest, LoadNonExistentFile)
-{
+TEST_F(ConfigReaderTest, LoadNonExistentFile) {
     ConfigReader reader;
-    std::string nonExistentPath = "C:/projects/getaf/Config/non_existent.xml";
-    ASSERT_FALSE(reader.LoadXml(nonExistentPath));
+    ASSERT_FALSE(reader.LoadXml("non_existent.xml"));
+    ASSERT_TRUE(reader.GetValue("any_key").empty());
 }
 
-TEST(ConfigReaderTest, LoadMalformedXmlFile)
-{
+TEST_F(ConfigReaderTest, LoadMalformedXmlFile) {
     ConfigReader reader;
-    std::string malformedConfigPath = "C:/projects/getaf/Config/malformed_config.xml";
-    // With the current simple XML parser, LoadXml will likely succeed in reading the file
-    // but the internal configData will be empty or incorrectly parsed.
-    ASSERT_TRUE(reader.LoadXml(malformedConfigPath));
-    // Expecting no keys to be found or values to be empty due to malformed XML
-    ASSERT_FALSE(reader.HasKey("setting"));
-    ASSERT_TRUE(reader.GetValue("setting").empty());
+    ASSERT_FALSE(reader.LoadXml("malformed_config.xml"));
+    // With TinyXML2, malformed XML should result in an empty configData
+    ASSERT_FALSE(reader.HasKey("config.setting"));
+    ASSERT_TRUE(reader.GetValue("config.setting.@value").empty());
+}
+
+TEST_F(ConfigReaderTest, LoadEmptyFile) {
+    ConfigReader reader;
+    ASSERT_FALSE(reader.LoadXml("empty_config.xml"));
+    ASSERT_FALSE(reader.HasKey("any_key"));
+    ASSERT_TRUE(reader.GetValue("any_key").empty());
+}
+
+TEST_F(ConfigReaderTest, MultipleLoads) {
+    ConfigReader reader;
+    
+    // First load
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    std::string firstValue = reader.GetValue("config.setting.@value");
+    
+    // Second load of the same file
+    ASSERT_TRUE(reader.LoadXml("test_config.xml"));
+    ASSERT_EQ(reader.GetValue("config.setting.@value"), firstValue);
+    
+    // Load invalid file after valid file
+    ASSERT_FALSE(reader.LoadXml("malformed_config.xml"));
+    // Previous values should be cleared
+    ASSERT_TRUE(reader.GetValue("config.setting.@value").empty());
+}
+
+TEST_F(ConfigReaderTest, LoadAdvancedXmlFileAndGetValues) {
+    ConfigReader reader;
+    ASSERT_TRUE(reader.LoadXml("advanced_config.xml"));
+
+    // Test text content directly within a node
+    ASSERT_EQ(reader.GetValue("root.simpleText.#text"), "Just some text.");
+
+    // Test mixed content (TinyXML2 might put it under #text or ignore tags within text)
+    // Depending on how parseXmlNodeToJson handles mixed content, this might need adjustment.
+    // For now, we expect it to capture the text content.
+    ASSERT_EQ(reader.GetValue("root.description.#text"), "This is a description with mixed content.");
+
+    // Test multiple elements of the same name (should get the first one)
+    ASSERT_EQ(reader.GetValue("root.item.name.#text"), "Item A");
+    ASSERT_EQ(reader.GetValue("root.item.value.#text"), "100");
+
+    // Test different data types
+    ASSERT_EQ(reader.GetValue("root.numericValue.#text"), "123");
+    ASSERT_EQ(reader.GetValue("root.booleanValue.#text"), "true");
+}
+
+TEST_F(ConfigReaderTest, HasKeyAdvancedXml) {
+    ConfigReader reader;
+    ASSERT_TRUE(reader.LoadXml("advanced_config.xml"));
+
+    ASSERT_TRUE(reader.HasKey("root.simpleText.#text"));
+    ASSERT_TRUE(reader.HasKey("root.description.#text"));
+    ASSERT_TRUE(reader.HasKey("root.item.name.#text"));
+    ASSERT_TRUE(reader.HasKey("root.numericValue.#text"));
+    ASSERT_TRUE(reader.HasKey("root.booleanValue.#text"));
+    ASSERT_FALSE(reader.HasKey("root.nonExistentKey"));
 }

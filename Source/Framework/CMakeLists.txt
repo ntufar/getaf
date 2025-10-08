@@ -11,31 +11,11 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(json)
 
-# Add cpr dependency
-FetchContent_Declare(
-  cpr
-  GIT_REPOSITORY https://github.com/libcpr/cpr.git
-  GIT_TAG 1.10.5
-)
-FetchContent_MakeAvailable(cpr)
-
-# Add mysql-connector-c++ dependency
-FetchContent_Declare(
-  mysql_connector_cpp
-  GIT_REPOSITORY https://github.com/mysql/mysql-connector-cpp.git
-  GIT_TAG 9.4.0
-)
-FetchContent_MakeAvailable(mysql_connector_cpp)
-
 
 # Create a library for the framework
 add_library(Framework
     ConfigReader.cpp
     ConfigReader.h
-    HTTPClient.cpp
-    HTTPClient.h
-    DBConnector.cpp
-    DBConnector.h
     TestReporter.cpp
     TestReporter.h
 )
@@ -43,10 +23,10 @@ add_library(Framework
 # Public headers
 target_include_directories(Framework PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(Framework PUBLIC ${json_SOURCE_DIR}/include)
-target_include_directories(Framework PUBLIC ${mysql_connector_cpp_SOURCE_DIR}/include)
+target_include_directories(Framework PUBLIC ${CMAKE_SOURCE_DIR}/third_party/tinyxml2)
 
 # Link dependencies
-target_link_libraries(Framework PRIVATE cpr::cpr mysql_connector_cpp::mysql_connector_cpp)
+target_link_libraries(Framework PRIVATE tinyxml2)
 
 
 # Include GoogleTest
@@ -57,4 +37,4 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 # Link GoogleTest to the framework library for testing
-target_link_libraries(Framework GTest::gtest_main)
+target_link_libraries(Framework PRIVATE GTest::gtest_main)

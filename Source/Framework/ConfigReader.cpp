@@ -2,31 +2,42 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include "tinyxml2.h" // Include TinyXML2 header
 
-// Placeholder for XML to JSON conversion. In a real scenario, a robust XML parser would be used.
-// This simple function attempts to convert a very basic XML structure to JSON.
-// It's highly limited and for demonstration purposes only.
-nlohmann::json convertSimpleXmlToJson(const std::string& xmlContent) {
-    nlohmann::json j;
-    std::string currentTag;
-    std::string currentValue;
-    std::istringstream iss(xmlContent);
-    std::string line;
+// Helper function to recursively parse XML nodes into nlohmann::json
+void parseXmlNodeToJson(const tinyxml2::XMLElement* element, nlohmann::json& jsonNode) {
+    if (!element) {
+        return;
+    }
 
-    while (std::getline(iss, line)) {
-        size_t startTag = line.find("< ");
-        size_t endTag = line.find(">");
-        if (startTag != std::string::npos && endTag != std::string::npos) {
-            currentTag = line.substr(startTag + 1, endTag - startTag - 1);
-            size_t valueStart = endTag + 1;
-            size_t valueEnd = line.find("</" + currentTag + ">");
-            if (valueEnd != std::string::npos) {
-                currentValue = line.substr(valueStart, valueEnd - valueStart);
-                j[currentTag] = currentValue;
+    // Add attributes
+    for (const tinyxml2::XMLAttribute* attr = element->FirstAttribute(); attr; attr = attr->Next()) {
+        jsonNode["@" + std::string(attr->Name())] = attr->Value();
+    }
+
+    // Add child elements
+    for (const tinyxml2::XMLElement* child = element->FirstChildElement(); child; child = child->NextSiblingElement()) {
+        nlohmann::json childJson;
+        parseXmlNodeToJson(child, childJson);
+
+        std::string tagName = child->Name();
+        if (jsonNode.contains(tagName)) {
+            // If tag already exists, convert to array
+            if (!jsonNode[tagName].is_array()) {
+                nlohmann::json temp = jsonNode[tagName];
+                jsonNode[tagName] = nlohmann::json::array();
+                jsonNode[tagName].push_back(temp);
             }
+            jsonNode[tagName].push_back(childJson);
+        } else {
+            jsonNode[tagName] = childJson;
         }
     }
-    return j;
+
+    // Add text content if no child elements
+    if (!element->FirstChildElement() && element->GetText()) {
+        jsonNode["#text"] = element->GetText();
+    }
 }
 
 ConfigReader::ConfigReader()
@@ -35,18 +46,14 @@ ConfigReader::ConfigReader()
 
 bool ConfigReader::LoadXml(const std::string& filePath)
 {
-    std::ifstream file(filePath);
-    if (!file.is_open()) {
-        std::cerr << "Error: Could not open config file: " << filePath << std::endl;
+    tinyxml2::XMLDocument doc;
+    if (doc.LoadFile(filePath.c_str()) != tinyxml2::XML_SUCCESS) {
+        std::cerr << "Error: Could not load XML file: " << filePath << " - " << doc.ErrorStr() << std::endl;
         return false;
     }
 
-    std::stringstream buffer;
-    buffer << file.rdbuf();
-    std::string xmlContent = buffer.str();
-
-    // Attempt to convert simple XML to JSON
-    configData = convertSimpleXmlToJson(xmlContent);
+    configData.clear();
+    parseXmlNodeToJson(doc.RootElement(), configData);
 
     std::cout << "ConfigReader: Loaded XML from " << filePath << std::endl;
     return true;
@@ -54,16 +61,42 @@ bool ConfigReader::LoadXml(const std::string& filePath)
 
 std::string ConfigReader::GetValue(const std::string& key, const std::string& defaultValue) const
 {
-    // This is a very basic implementation. For nested keys, a more sophisticated approach is needed.
-    if (configData.contains(key)) {
-        return configData[key].get<std::string>();
+    nlohmann::json current = configData;
+    std::istringstream iss(key);
+    std::string segment;
+
+    while (std::getline(iss, segment, '.')) {
+        if (current.contains(segment)) {
+            current = current[segment];
+        } else {
+            return defaultValue;
+        }
+    }
+
+    if (current.is_string()) {
+        return current.get<std::string>();
+    } else if (current.is_number()) {
+        return std::to_string(current.get<double>());
+    } else if (current.is_boolean()) {
+        return current.get<bool>() ? "true" : "false";
     }
     return defaultValue;
 }
 
 bool ConfigReader::HasKey(const std::string& key) const
 {
-    return configData.contains(key);
+    nlohmann::json current = configData;
+    std::istringstream iss(key);
+    std::string segment;
+
+    while (std::getline(iss, segment, '.')) {
+        if (current.contains(segment)) {
+            current = current[segment];
+        } else {
+            return false;
+        }
+    }
+    return true;
 }
 
 // C++/C# Bridge functions (from ConfigReader.h)

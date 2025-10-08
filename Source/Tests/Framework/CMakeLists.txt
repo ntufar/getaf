@@ -9,4 +9,4 @@ add_executable(FrameworkTests
     TestReporter.cpp
 )
 
-target_link_libraries(FrameworkTests PRIVATE Framework gtest_main)
+target_link_libraries(FrameworkTests PRIVATE Framework gtest_main tinyxml2)
